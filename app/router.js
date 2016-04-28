@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('index', function() {
+  this.route('index', { path: '/' }, function() {
     this.route('veggie');
     this.route('zombie');
     this.route('lorem');
