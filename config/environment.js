@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-tabbed-routes',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/ember-tabbed-routes',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
