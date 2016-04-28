@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'ember-tabbed-routes',
     environment: environment,
     baseURL: '/ember-tabbed-routes',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
