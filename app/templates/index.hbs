@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>Tabbed Route Example</h3>
+  <div class="well">
+    Each tab pane below is actually a nested route.
+    Clicking on a tab automatically activates the tab and switches the active route.
+    Note that the URL changes when you click a tab.
+    Also note that the active tab is persisted if you refresh the page.
+  </div>
+  <ul class="nav nav-tabs">
+    {{#each model.tabs as |tab|}}
+      {{#link-to tab.route tagName='li' href=false}}
+        {{#link-to tab.route}}{{tab.name}}{{/link-to}}
+      {{/link-to}}
+    {{/each}}
+  </ul>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active">
+      {{outlet}}
+    </div>
+  </div>
+</div>
